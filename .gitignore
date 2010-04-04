@@ -2,3 +2,4 @@ pkg/
 doc/
 coverage/
 reittiopas.gemspec
+.gh_pages

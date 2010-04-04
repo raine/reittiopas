@@ -25,3 +25,10 @@ Dir['tasks/**/*.rake'].each { |t| load t }
 
 # remove_task :default
 # task :default => [:spec, :features]
+
+require 'gokdok'
+Gokdok::Dokker.new do |gd|
+  gd.repo_url  = "git@github.com:raneksi/reittiopas.git"
+  gd.rdoc_task = :docs
+  gd.doc_home  = 'doc'
+end
