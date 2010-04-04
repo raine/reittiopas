@@ -1,5 +1,7 @@
 = Reittiopas
 
+* {Documentation at Github}[http://raneksi.github.com/reittiopas/]
+
 == DESCRIPTION:
 
 Reittiopas is a Ruby library for accessing the {Reittiopas Developer API}[http://developer.reittiopas.fi/pages/fi/reittiopas-api.php].
