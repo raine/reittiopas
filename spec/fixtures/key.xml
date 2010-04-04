@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?><MTRXML version="1.0">
+<GEOCODE key="tee">
+<LOC name1="Teeripuisto" number="" city="Helsinki" code="1700" address="" type="3" category="poi" x="2556686" y="6682815" lon="25.02051" lat="60.2528" />
+<LOC name1="Teemuntie" number="" city="Helsinki" code="" address="" type="900" category="street" x="2558052" y="6685202" lon="25.04586" lat="60.27403" />
+<LOC name1="Teerenpelinpolku" number="" city="Helsinki" code="" address="" type="900" category="street" x="2556598" y="6682627" lon="25.01887" lat="60.25113" />
+<LOC name1="Teerentie" number="" city="Kirkkonummi" code="" address="" type="900" category="street" x="2524975" y="6686648" lon="24.44833" lat="60.29037" />
+<LOC name1="Teerikuja" number="" city="Vantaa" code="" address="" type="900" category="street" x="2559103" y="6693697" lon="25.06733" lat="60.35011" />
+<LOC name1="Teerikukonkuja" number="" city="Helsinki" code="" address="" type="900" category="street" x="2556898" y="6683026" lon="25.0244" lat="60.25466" />
+<LOC name1="Teerikukontie" number="" city="Helsinki" code="" address="" type="900" category="street" x="2556907" y="6682892" lon="25.02453" lat="60.25346" />
+<LOC name1="Teerimäentie" number="" city="Kerava" code="" address="" type="900" category="street" x="2560257" y="6698983" lon="25.08981" lat="60.39737" />
+<LOC name1="Teerimäentie" number="" city="Vantaa" code="" address="" type="900" category="street" x="2562514" y="6686983" lon="25.12703" lat="60.28935" />
+<LOC name1="Teeripolku" number="" city="Vantaa" code="" address="" type="900" category="street" x="2559133" y="6693811" lon="25.06791" lat="60.35113" />
+<LOC name1="Teeririnne" number="" city="Vantaa" code="" address="" type="900" category="street" x="2559169" y="6693364" lon="25.06843" lat="60.34711" />
+<LOC name1="Teerisuonkuja" number="" city="Helsinki" code="" address="" type="900" category="street" x="2556995" y="6682667" lon="25.02605" lat="60.25143" />
+<LOC name1="Teerisuontie" number="" city="Helsinki" code="" address="" type="900" category="street" x="2557034" y="6682586" lon="25.02673" lat="60.2507" />
+<LOC name1="Teeritie" number="" city="Vantaa" code="" address="" type="900" category="street" x="2559070" y="6693600" lon="25.06671" lat="60.34924" />
+<LOC name1="Teekkarikylä" number="" city="Espoo" code="2222208" address="Otakaari" type="10" category="stop" x="2546445" y="6675512" lon="24.83393" lat="60.18855" />
+<LOC name1="Teerisuonkuja" number="" city="Helsinki" code="1382186" address="Teerisuontie" type="10" category="stop" x="2556964" y="6682609" lon="25.02547" lat="60.25091" />
+<LOC name1="Teerisuontie" number="" city="Helsinki" code="1382141" address="Teerisuontie" type="10" category="stop" x="2556740" y="6682861" lon="25.0215" lat="60.25321" />
+<LOC name1="Teeritie" number="" city="Vantaa" code="4810204" address="Korsontie" type="10" category="stop" x="2559002" y="6694007" lon="25.06559" lat="60.35291" />
+</GEOCODE>
+</MTRXML>

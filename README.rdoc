@@ -1,0 +1,56 @@
+= Reittiopas
+
+== DESCRIPTION:
+
+Reittiopas is a Ruby library for accessing the {Reittiopas Developer API}[http://developer.reittiopas.fi/pages/fi/reittiopas-api.php].
+
+Requires an account to the service that can be requested through {the account request page}[http://developer.reittiopas.fi/pages/fi/accountrequest.php].
+
+== SYNOPSIS:
+ require 'reittiopas'
+ reittiopas = Reittiopas.new(:username => 'myuser', :password => 'lolcats')
+
+=== Geocoding
+Search for location by keyword _tee_.
+  location = reittiopas.location('tee').first
+  puts "#{location}, #{location.city}"
+  puts "http://maps.google.com/maps?q=#{URI.escape location.coordinates[:wgs]}"
+Teeripuisto, Helsinki
+
+http://maps.google.com/maps?q=60.2528,%2025.02051
+
+=== Reverse geocoding
+Search for a location by KKJ[http://fi.wikipedia.org/wiki/Kartastokoordinaattij%C3%A4rjestelm%C3%A4] coordinates.
+  location = reittiopas.location(:x => 2546445, :y => 6675512).first
+  puts "#{location}, #{location.city}"
+Otakaari 9, Espoo
+
+== REQUIREMENTS:
+
+* Nokogiri[http://nokogiri.org/]
+* Addressable[http://github.com/sporkmonger/addressable]
+
+== LICENSE:
+
+(The MIT License)
+
+Copyright (c) 2010 Raine Virta
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
