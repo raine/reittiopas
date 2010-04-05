@@ -3,10 +3,11 @@
 #
 class Reittiopas
   include Geocoding
-  
+
   # Instantiate a Reittiopas object.
   #
-  # +account+ should be a hash containing +:username+ and +:password+.
+  # [account] A hash containing the keys +:username+ and +:password+ with
+  #           their respective values.
   #
   #   Reittiopas.new(:username => 'exampleuser', :password => 'lolcat')
   def initialize(account)
