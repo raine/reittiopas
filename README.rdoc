@@ -33,6 +33,11 @@ Otakaari 9, Espoo
 * Nokogiri[http://nokogiri.org/]
 * Addressable[http://github.com/sporkmonger/addressable]
 
+== TODO:
+
+* Support for determining the closest stop within radius
+* Routing
+
 == LICENSE:
 
 (The MIT License)
