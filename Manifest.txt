@@ -10,7 +10,6 @@ lib/reittiopas/http.rb
 lib/reittiopas/location.rb
 lib/reittiopas/reittiopas.rb
 lib/reittiopas/utils.rb
-reittiopas_test.rb
 script/console
 script/destroy
 script/generate
