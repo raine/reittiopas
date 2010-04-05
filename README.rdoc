@@ -1,6 +1,7 @@
 = Reittiopas
 
 * {Documentation at Github}[http://raneksi.github.com/reittiopas/]
+* {Specifications}[http://raneksi.github.com/reittiopas/specdoc]
 
 == DESCRIPTION:
 
