@@ -6,8 +6,10 @@ module Geocoding
 
   # Send a geocode location query to the API.
   # Both geocoding, and reverse geocoding data is accessed through this method.
-  #
   # Returns results as an array containing Reittiopas::Location objects.
+  #
+  # [opts] Either a keyword string, or a hash containing KKJ coordinates
+  #        presented as rectangular grid coordinates.
   #
   # === Examples:
   # * Search for location by keyword _tee_.
@@ -28,6 +30,8 @@ module Geocoding
 
 private
   # Parse XML received from a geocoding API query.
+  #
+  # [xml] Raw XML received from API.
   def parse(xml, opts)
     doc = Nokogiri::XML(xml)
 

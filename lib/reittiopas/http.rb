@@ -18,7 +18,8 @@ class HTTP
 
   # Create a new Reittiopas::HTTP object.
   #
-  # +account+ should be a hash containing +:username+ and +:password+.
+  # [account] A hash containing the keys +:username+ and +:password+ with
+  #           their respective values.
   def initialize(account)
     @api_uri = Addressable::URI.parse(API_BASE_URI)
     @api_uri.query_values = {:user => account[:username], :pass => account[:password]}
@@ -27,8 +28,8 @@ class HTTP
   # Send a GET request to the API with account details and +opts+ as query
   # parameters.
   #
-  # * +opts+ — A hash containing query parameters. Values are automatically
-  # encoded by Addressable::URI.
+  # [opts] A hash containing query parameters. Values are automatically
+  #        encoded by Addressable::URI.
   def get(opts)
     raise ArgumentError if opts.empty?
     uri = @api_uri.dup
