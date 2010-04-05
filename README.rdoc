@@ -28,6 +28,16 @@ Search for a location by KKJ[http://fi.wikipedia.org/wiki/Kartastokoordinaattij%
   puts "#{location}, #{location.city}"
 Otakaari 9, Espoo
 
+== INSTALLATION:
+
+  gem install reittiopas
+
+or for the latest git:
+
+  git clone git://github.com/raneksi/reittiopas.git
+  cd reittiopas
+  rake install_gem
+
 == REQUIREMENTS:
 
 * Nokogiri[http://nokogiri.org/]
