@@ -240,16 +240,18 @@ describe Reittiopas::Location::Coordinates::WGS do
 
   it { should respond_to :latitude }
   it { should respond_to :longitude }
-  
+
   it { subject.to_s.should eql '60.23245, 24.74568' }
 end
 
 describe Hash do
   describe "#assert_valid_keys" do
-    it "should raise ArgumentError when invalid keys are found" do
-      lambda {
-        { :name => "Rob", :years => "28" }.assert_valid_keys :name, :age
-      }.should raise_error(ArgumentError, "Unknown key(s): years")
+    context "when invalid keys are found" do
+      it "should raise ArgumentError when invalid keys are found" do
+        lambda do
+          { :name => "Rob", :years => "28" }.assert_valid_keys :name, :age
+        end.should raise_error(ArgumentError, "Unknown key(s): years")
+      end
     end
   end
 
