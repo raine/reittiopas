@@ -262,4 +262,14 @@ describe Hash do
       end
     end
   end
+
+  describe "#assert_required_and_valid_keys" do
+    context "when invalid keys are found and required keys are missing" do
+      it "should raise ArgumentError" do
+        lambda do
+          { :name => "Rob"}.assert_required_and_valid_keys :weight
+        end.should raise_error(ArgumentError)
+      end
+    end
+  end
 end

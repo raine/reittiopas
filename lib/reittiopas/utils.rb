@@ -20,4 +20,9 @@ class Hash
     missing_keys = [required_keys].flatten - keys
     raise(ArgumentError, "Missing required key(s) in the argument hash: #{missing_keys.join(", ")}") unless missing_keys.empty?
   end
+
+  def assert_required_and_valid_keys(*keys)
+    assert_valid_keys(keys)
+    assert_required_keys(keys)
+  end
 end
