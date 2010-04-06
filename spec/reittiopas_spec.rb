@@ -252,4 +252,14 @@ describe Hash do
       }.should raise_error(ArgumentError, "Unknown key(s): years")
     end
   end
+
+  describe "#assert_required_keys" do
+    context "when required keys are missing" do
+      it "should raise ArgumentError" do
+        lambda do
+          { :name => "Rob", :years => "28" }.assert_required_keys :weight
+        end.should raise_error(ArgumentError, "Missing required key(s) in the argument hash: weight")
+      end
+    end
+  end
 end
