@@ -11,6 +11,7 @@ class Reittiopas
   #
   #   Reittiopas.new(:username => 'exampleuser', :password => 'lolcat')
   def initialize(account)
+    account.assert_required_and_valid_keys :username, :password
     @http = Reittiopas::HTTP.new(account)
   end
 end

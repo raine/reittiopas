@@ -15,6 +15,20 @@ end
 describe Reittiopas do
   before { @account = {:username => 'foo', :password => 'bar'} }
 
+  context "when initializing with missing arguments" do
+    it "should raise ArgumentError if password is missing" do
+      lambda do
+        Reittiopas.new(:username => 'foo')
+      end.should raise_error ArgumentError
+    end
+
+    it "should raise ArgumentError if username is missing" do
+      lambda do
+        Reittiopas.new(:password => 'foo')
+      end.should raise_error ArgumentError
+    end
+  end
+
   context "when initialized with an account" do
     subject { Reittiopas.new(@account) }
 
