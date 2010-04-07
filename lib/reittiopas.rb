@@ -8,6 +8,7 @@ require 'net/http'
 require 'nokogiri'
 require 'addressable/uri'
 
+require 'reittiopas/exceptions'
 require 'reittiopas/utils'
 require 'reittiopas/coordinates'
 require 'reittiopas/location'

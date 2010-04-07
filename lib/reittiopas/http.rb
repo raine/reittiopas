@@ -35,7 +35,14 @@ class HTTP
     uri = @api_uri.dup
     opts.merge!(opts){ |k,ov| ov.to_s } # Coordinates to string
     uri.query_values = uri.query_values.merge(opts)
-    return Net::HTTP.get(uri)
+    body = Net::HTTP.get(uri)
+
+    # API responses with 200 OK in case of invalid account, so...
+    if body =~ /No rights to access API./
+      raise AccessError, 'Most likely due to invalid account details'
+    end
+
+    body
   end
 end
 end

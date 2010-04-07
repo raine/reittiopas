@@ -100,6 +100,17 @@ describe Reittiopas::HTTP do
   end
 
   describe "#get" do
+    context "when making a request with invalid account details" do
+      before do
+        no_access_response = File.open(File.dirname(__FILE__) + '/fixtures/no_access')
+        stub_request(:get, Regexp.new(BASE_URI)).to_return(no_access_response)
+      end
+
+      it "should raise AccessError" do
+        lambda { @http.get(:foo => 'bar') }.should raise_error(Reittiopas::AccessError)
+      end
+    end
+
     context "with empty hash as argument" do
       it { lambda { @http.get({}) }.should raise_error(ArgumentError) }
     end
