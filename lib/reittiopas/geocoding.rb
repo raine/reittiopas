@@ -22,6 +22,7 @@ module Geocoding
     params = if opts.is_a? String
       {:key => opts}
     elsif opts.is_a? Hash
+      opts.assert_required_and_valid_keys :x, :y
       opts
     end
 
