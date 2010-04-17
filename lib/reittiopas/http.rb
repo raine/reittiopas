@@ -26,7 +26,8 @@ class HTTP
   end
 
   # Send a GET request to the API with account details and +opts+ as query
-  # parameters.
+  # parameters. Raises AccessError when request fails due to a 
+  #   
   #
   # [opts] A hash containing query parameters. Values are automatically
   #        encoded by Addressable::URI.
