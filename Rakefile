@@ -1,5 +1,7 @@
 require 'rubygems'
-gem 'hoe', '>= 2.1.0'
+require 'bundler'
+Bundler.setup
+
 require 'hoe'
 require 'fileutils'
 require './lib/reittiopas'
@@ -23,5 +25,7 @@ end
 require 'newgem/tasks'
 Dir['tasks/**/*.rake'].each { |t| load t }
 
-# remove_task :default
-# task :default => [:spec, :features]
+# For some reason this is required or bundler's gems won't be available
+# in specs, TODO until I find some project using bundler + spec that
+# does this correctly
+ENV["GEM_PATH"] = nil

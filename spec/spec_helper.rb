@@ -1,14 +1,7 @@
-begin
-  require 'spec'
-rescue LoadError
-  require 'rubygems' unless ENV['NO_RUBYGEMS']
-  gem 'rspec'
-  require 'spec'
-end
+$:.unshift File.expand_path('..', __FILE__)
+$:.unshift File.expand_path('../../lib', __FILE__)
 
-$:.unshift(File.dirname(__FILE__) + '/../lib')
 require 'reittiopas'
-
 require 'webmock/rspec'
 include WebMock
 
