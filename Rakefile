@@ -10,7 +10,7 @@ Hoe.plugin :newgem
 
 $hoe = Hoe.spec 'reittiopas' do
   developer 'Raine Virta', 'raine.virta@gmail.com'
-  self.rubyforge_name   = self.name
+  self.rubyforge_name = self.name
 
   %w{ addressable nokogiri }.each do |dep|
     self.extra_dev_deps << [dep, '>= 0']
