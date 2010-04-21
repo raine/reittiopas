@@ -1,10 +1,12 @@
+Gemfile
+Gemfile.lock
 History.txt
 Manifest.txt
 README.rdoc
 Rakefile
-deps.rip
 lib/reittiopas.rb
 lib/reittiopas/coordinates.rb
+lib/reittiopas/exceptions.rb
 lib/reittiopas/geocoding.rb
 lib/reittiopas/http.rb
 lib/reittiopas/location.rb
@@ -14,8 +16,10 @@ script/console
 script/destroy
 script/generate
 spec/fixtures/key.xml
+spec/fixtures/no_access
 spec/fixtures/reverse_geocoding.xml
 spec/reittiopas_spec.rb
 spec/spec.opts
 spec/spec_helper.rb
+tasks/rdoc.rake
 tasks/rspec.rake
