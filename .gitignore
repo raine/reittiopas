@@ -3,3 +3,4 @@ doc/
 coverage/
 reittiopas.gemspec
 .gh_pages
+.bundle/
