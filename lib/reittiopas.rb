@@ -1,6 +1,3 @@
-$:.unshift(File.dirname(__FILE__)) unless
-  $:.include?(File.dirname(__FILE__)) || $:.include?(File.expand_path(File.dirname(__FILE__)))
-
 require 'bundler'
 Bundler.setup(:default)
 
@@ -9,6 +6,9 @@ require 'cgi'
 require 'net/http'
 require 'nokogiri'
 require 'addressable/uri'
+
+$:.unshift(File.dirname(__FILE__)) unless
+  $:.include?(File.dirname(__FILE__)) || $:.include?(File.expand_path(File.dirname(__FILE__)))
 
 require 'reittiopas/exceptions'
 require 'reittiopas/utils'
