@@ -13,7 +13,7 @@ $hoe = Hoe.spec 'reittiopas' do
   self.rubyforge_name = self.name
 
   %w{ addressable nokogiri }.each do |dep|
-    self.extra_dev_deps << [dep, '>= 0']
+    self.extra_deps << [dep, '>= 0']
   end
 
   self.url              = "http://github.com/raneksi/reittiopas"
