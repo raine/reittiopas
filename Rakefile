@@ -17,7 +17,10 @@ $hoe = Hoe.spec 'reittiopas' do
   end
 
   self.url              = "http://github.com/raneksi/reittiopas"
-  self.extra_dev_deps   = [['webmock', ">= 0.9.1"]]
+  self.extra_dev_deps   = [
+    ['webmock', ">= 0.9.1"],
+    ['rspec', ">= 0"]
+  ]
   self.readme_file      = "README.rdoc"
   self.extra_rdoc_files = FileList['*.rdoc']
 end
