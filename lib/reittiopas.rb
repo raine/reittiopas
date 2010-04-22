@@ -1,6 +1,3 @@
-require 'bundler'
-Bundler.setup(:default)
-
 require 'uri'
 require 'cgi'
 require 'net/http'
