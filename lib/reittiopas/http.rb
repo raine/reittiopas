@@ -35,7 +35,9 @@ class HTTP
     uri = @api_uri.dup
     opts.merge!(opts){ |k,ov| ov.to_s } # Coordinates to string
     uri.query_values = uri.query_values.merge(opts)
-    body = Net::HTTP.get(uri)
+
+    # TODO ugly workaround until addressable's author updates the game
+    body = Net::HTTP.get(URI.parse(uri.to_s))
 
     # API responses with 200 OK in case of invalid account, so...
     if body =~ /No rights to access API./
