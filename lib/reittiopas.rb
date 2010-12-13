@@ -12,6 +12,7 @@ require 'reittiopas/utils'
 require 'reittiopas/coordinates'
 require 'reittiopas/location'
 require 'reittiopas/geocoding'
+require 'reittiopas/routing'
 require 'reittiopas/reittiopas'
 require 'reittiopas/http'
 
