@@ -11,14 +11,7 @@ class Reittiopas
                  :b => @to.coordinates[:kkj].to_routing_string,
                  :opts => opts }
       
-      parse @http.get(params), opts
-      
-    end
-
-    private
-    
-    def parse(response, opts)
-      puts response
+      Route.parse @http.get(params), opts
     end
         
   end
