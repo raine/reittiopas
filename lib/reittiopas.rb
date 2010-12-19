@@ -3,6 +3,7 @@ require 'cgi'
 require 'net/http'
 require 'nokogiri'
 require 'addressable/uri'
+require 'date'
 
 $:.unshift(File.dirname(__FILE__)) unless
   $:.include?(File.dirname(__FILE__)) || $:.include?(File.expand_path(File.dirname(__FILE__)))

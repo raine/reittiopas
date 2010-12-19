@@ -27,9 +27,9 @@ describe Reittiopas do
       @kallion_kirjasto = Reittiopas::Location.parse(parse_elem(File.read(File.dirname(__FILE__) + '/fixtures/kallion_kirjasto.xml')))
     end
     
-    it "should require from and to locations with options" do  
-      options = {}      
-      #@reittiopas.routing(@ulvilantie, @kallion_kirjasto, options).should == []
+    it "should require from and to locations with options and return an array of routes" do  
+      options = {}
+      @reittiopas.routing(@ulvilantie, @kallion_kirjasto, options).should be_a Array
     end
   
   end
@@ -49,22 +49,21 @@ describe Reittiopas do
     specify { @route.walks.should be_a(Array) }
     specify { @route.lines.should be_a(Array) }
     
+    specify { @route.parts.last.should be_a(Reittiopas::Routing::Point)}
     specify { @route.parts.first.should be_a(Reittiopas::Routing::Point)}
 
     specify { @route.parts[1].should be_a(Reittiopas::Routing::Walk)}
-#    specify { @route.parts[2].should be_a(Reittiopas::Routing::Line)}
-#    specify { @route.parts[3].should be_a(Reittiopas::Routing::Walk)}
-#    specify { @route.parts[4].should be_a(Reittiopas::Routing::Line)}
+    specify { @route.parts[2].should be_a(Reittiopas::Routing::Line)}
+    specify { @route.parts[3].should be_a(Reittiopas::Routing::Walk)}
+    specify { @route.parts[4].should be_a(Reittiopas::Routing::Line)}
 
-    specify { @route.walks.first.should be_a(Reittiopas::Routing::Walk)}
-#    specify { @route.walks[1].should be_a(Reittiopas::Routing::Walk)}
-#    specify { @route.walks[2].should be_a(Reittiopas::Routing::Walk)}
+    specify { @route.walks[0].should be_a(Reittiopas::Routing::Walk)}
+    specify { @route.walks[1].should be_a(Reittiopas::Routing::Walk)}
+    specify { @route.walks[2].should be_a(Reittiopas::Routing::Walk)}
 
-    specify { @route.lines.first.should be_a(Reittiopas::Routing::Line)}
-#    specify { @route.lines[1].should be_a(Reittiopas::Routing::Line)}
-
-    specify { @route.parts.last.should be_a(Reittiopas::Routing::Point)}
-    
+    specify { @route.lines[0].should be_a(Reittiopas::Routing::Line)}
+    specify { @route.lines[1].should be_a(Reittiopas::Routing::Line)}
+        
   end
   
   describe Reittiopas::Routing::Point do
@@ -173,7 +172,11 @@ describe Reittiopas do
     specify { @walk.sections.first.should be_a(Reittiopas::Routing::Point)}
     specify { @walk.sections[1].should be_a(Reittiopas::Routing::MapLocation)}
     specify { @walk.sections[2].should be_a(Reittiopas::Routing::Stop)}
-
+    
+    specify { @walk.stops.first.arrival.date_time.should == DateTime.new(2010, 12, 13, 21, 04)}
+    specify { @walk.map_locations.first.arrival.date_time.should == DateTime.new(2010, 12, 13, 21, 04)}
+    specify { @walk.points.first.arrival.date_time.should == DateTime.new(2010, 12, 13, 21, 02)}
+    
   end
 
   describe Reittiopas::Routing::Line do
@@ -288,17 +291,28 @@ describe Reittiopas do
       @line = Reittiopas::Routing::Line.parse(element)
     end
     
+    
     specify { @line.line_id.should == "138" }
-  #  specify { @line.code.should == "1018  2" }
-   # specify { @line.line_type.should == 1 }
-    #specify { @line.mobility.should == 3 }
+    specify { @line.code.should == "1018  2" }
+    specify { @line.line_type.should == 1 }
+    specify { @line.mobility.should == 3 }
 
-    #specify { @line.time.should == 13.000 }
-    #specify { @line.distance.should == 5557.353 }
+    specify { @line.time.should == 13.000 }
+    specify { @line.distance.should == 5557.353 }
     
-    #specify { @line.sections.should be_a(Array) }
-    #specify { @line.stops.should be_a(Array) }
+    specify { @line.sections.should be_a(Array) }
+    specify { @line.stops.should be_a(Array) }
+
+    specify { @line.stops.first.arrival.date_time.should == DateTime.new(2010, 12, 13, 21, 04)}
     
+    specify { @line.stops.size.should == 15}
+    specify { @line.sections.size.should == 15}
+  
+  
+    describe "creation" do
+      specify { Reittiopas::Routing::Line.new({}).stops.should == [] }
+    end
+  
   end
 
 
