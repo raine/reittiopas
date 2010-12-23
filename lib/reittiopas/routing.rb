@@ -2,6 +2,8 @@ class Reittiopas
   
   module Routing
   
+    # Route between two Locations.  Returns an array of Routes that contain all sub elements
+    
     def routing(from, to, opts)
       @from = from
       @to = to
@@ -24,24 +26,24 @@ class Reittiopas
   
   
     class Route
-    
+      
       attr_reader :time, :distance, :parts, :walks, :lines
       
       def initialize(opts)
         @time = opts[:time].to_f if opts[:time]
         @distance = opts[:distance].to_f if opts[:time]
         
-        @parts, @walks, @lines = opts[:parts], opts[:walks], opts[:lines]
-        
+        @parts, @walks, @lines = opts[:parts], opts[:walks], opts[:lines]      
       end
       
+      
+      # Parse the route and sub elements
       def self.parse(xml)
         length_element = xml.search("LENGTH").first
         
         time = length_element.get_attr_value "time"
         dist = length_element.get_attr_value "dist"
-        
-        
+          
         parts, walks, lines = [], [], []
         
         xml.elements.each do |e|
@@ -69,10 +71,10 @@ class Reittiopas
             
       end
       
-
-      
     end
     
+    
+    # Points, MapLocations and Stops are Sections
     class Section
       attr_reader :x, :y, :arrival, :departure
       
@@ -100,7 +102,7 @@ class Reittiopas
       end
 
     end
-        
+     
     class Point < Section
       
       attr_reader :uid
@@ -174,6 +176,7 @@ class Reittiopas
       
     end
     
+    # Each Section has Arrival and Departure times (and seems that those are always the same)
     
     class SectionTime
       
@@ -192,14 +195,12 @@ class Reittiopas
       end
     end
     
-    class Arrival < SectionTime
+    class Arrival < SectionTime ; end
     
-    end
+    class Departure < SectionTime ; end
     
-    class Departure < SectionTime
     
-    end
-    
+    # Part represents Walks and Lines.    
     class Part
   
       attr_reader :time, :distance,
