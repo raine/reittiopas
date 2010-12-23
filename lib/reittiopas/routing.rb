@@ -6,10 +6,9 @@ class Reittiopas
       @from = from
       @to = to
       @options = opts
-
+      
       params = { :a => @from.coordinates[:kkj].to_routing_string,
-                 :b => @to.coordinates[:kkj].to_routing_string,
-                 :opts => @options }
+                 :b => @to.coordinates[:kkj].to_routing_string}.merge(@options)
       
       xml = @http.get(params)
       doc = Nokogiri::XML(xml)

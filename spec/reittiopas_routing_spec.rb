@@ -32,6 +32,16 @@ describe Reittiopas do
       @reittiopas.routing(@ulvilantie, @kallion_kirjasto, options).should be_a Array
     end
   
+    it "should pass options to reittiopas" do
+      options = { :option1 => "value1",
+                  :option2 => 2 }
+      
+      @reittiopas.routing(@ulvilantie, @kallion_kirjasto, options)
+      
+      a_request(:get, /.*option1=value1&option2=2.*/).should have_been_made.once
+    end
+    
+    
   end
   
   describe Reittiopas::Routing::Route do
