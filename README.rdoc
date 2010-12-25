@@ -28,6 +28,28 @@ Search for a location by KKJ[http://fi.wikipedia.org/wiki/Kartastokoordinaattij%
   puts "#{location}, #{location.city}"
 Otakaari 9, Espoo
 
+=== Routing
+
+Search for routes between two locations: show 3 routes and do not use metro.
+
+  from = reittiopas.locations('mannerheimintie 5').first
+  to = reittiopas.location('kallion kirjasto').first
+
+  routes = reittiopas.routing(from, to, {"show" => 3,
+                                         "use_metro" => 0})
+
+  routes.each do |route|
+	puts "#{route.distance} #{route.time}"
+	puts "Lines: "
+
+	route.lines.each do |line|
+		puts "#{line.code} starts from: #{line.stops.first.code}"
+	end
+  end
+
+Options for routing are passed to Reittiopas.  See Reittiopas developer API for the possible options.
+
+
 == INSTALLATION:
 
   gem install reittiopas
