@@ -259,8 +259,7 @@ class Reittiopas
     end
     
     class Line < Part
-      attr_reader :line_id, :code, :line_type, :mobility,
-                  :stops
+      attr_reader :line_id, :code, :line_type, :mobility
       
       def initialize(opts)
         super

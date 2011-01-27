@@ -314,6 +314,8 @@ describe Reittiopas do
     specify { @line.stops.should be_a(Array) }
 
     specify { @line.stops.first.arrival.date_time.should == DateTime.new(2010, 12, 13, 21, 04)}
+    specify { @line.stops.first.names["1"].should == "Ulvilantie 21" }
+    specify { @line.stops.last.names["1"].should == "Töölöntori" }
     
     specify { @line.stops.size.should == 15}
     specify { @line.sections.size.should == 15}
