@@ -105,6 +105,7 @@ describe Reittiopas do
       doc = Nokogiri::XML(%{<MAPLOC x="2548250.4" y="6677834.0" type="0">
 				<ARRIVAL date="20101213" time="2104"/>
 				<DEPARTURE date="20101214" time="2105"/>
+				<NAME lang="1" val="Fleminginkatu"/>
 			</MAPLOC>})
   		
   		element = doc.elements.first
@@ -119,7 +120,8 @@ describe Reittiopas do
 
     specify { @map_location.arrival.date_time.should == DateTime.new(2010,12,13,21,04)}
     specify { @map_location.departure.date_time.should == DateTime.new(2010,12,14,21,05)}
-
+    
+    specify { @map_location.name.should == "Fleminginkatu" }
   end
 
 

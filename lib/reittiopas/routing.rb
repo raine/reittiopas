@@ -124,18 +124,24 @@ class Reittiopas
     
     class MapLocation < Section
       
-      attr_reader :location_type
+      attr_reader :location_type, :name
       
       def initialize(opts)
         super
         @location_type = opts[:location_type].to_i if opts[:location_type]
+        @name = opts[:name]
       end
       
       def self.parse(xml)
         opts = super
         location_type = xml.get_attr_value "type"
         
-        opts.merge!(:location_type => location_type)
+        name_elements = xml.search("NAME")
+        name = name_elements.first.get_attr_value "val" if name_elements.first
+        
+        opts.merge!(:location_type => location_type,
+                    :name => name)
+                    
         new(opts)
       end
     end
