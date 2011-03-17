@@ -31,7 +31,7 @@ class Reittiopas
       
       def initialize(opts)
         @time = opts[:time].to_f if opts[:time]
-        @distance = opts[:distance].to_f if opts[:time]
+        @distance = opts[:distance].to_f if opts[:distance]
         
         @parts, @walks, @lines = opts[:parts], opts[:walks], opts[:lines]      
       end
