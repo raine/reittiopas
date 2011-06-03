@@ -75,7 +75,10 @@ or for the latest git:
 
 (The MIT License)
 
-Copyright (c) 2010 Raine Virta
+Copyright (c) 2010 - 2011:
+
+* {Raine Virta}[https://github.com/raneksi]
+* {Matti Paksula}[https://github.com/matti]
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
