@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<MTRXML version="1.0">
+	<ROUTE from="start" to="dest">
+		<LENGTH time="34.605" dist="8150.277"/>
+		<POINT uid="start" x="2548199.0" y="6677769.0">
+			<ARRIVAL date="20101213" time="2102"/>
+			<DEPARTURE date="20101213" time="2102"/>
+		</POINT>
+		<WALK>
+			<LENGTH time="1.257" dist="132.387"/>
+
+			<POINT uid="start" x="2548199.0" y="6677769.0">
+				<ARRIVAL date="20101213" time="2102"/>
+				<DEPARTURE date="20101213" time="2102"/>
+			</POINT>
+			<MAPLOC x="2548250.4" y="6677834.0" type="0">
+				<ARRIVAL date="20101213" time="2104"/>
+				<DEPARTURE date="20101213" time="2104"/>
+			</MAPLOC>
+			<STOP code="6:1304133" x="2548265.0" y="6677828.0" id="1335">
+
+				<ARRIVAL date="20101213" time="2104"/>
+				<DEPARTURE date="20101213" time="2104"/>
+				<NAME lang="1" val="Ulvilantie 21"/>
+				<NAME lang="2" val="Ulfsbyvägen 21"/>
+			</STOP>
+		</WALK>
+		<LINE id="138" code="1018  2" type="1" mobility="3">
+			<LENGTH time="13.000" dist="5557.353"/>
+			<STOP code="6:1304133" x="2548265.0" y="6677828.0" id="1335" ord="7">
+
+				<ARRIVAL date="20101213" time="2104"/>
+				<DEPARTURE date="20101213" time="2104"/>
+				<NAME lang="1" val="Ulvilantie 21"/>
+				<NAME lang="2" val="Ulfsbyvägen 21"/>
+			</STOP>
+			<STOP code="6:1304134" x="2548692.0" y="6677805.0" id="1336">
+				<ARRIVAL date="20101213" time="2105"/>
+				<DEPARTURE date="20101213" time="2105"/>
+				<NAME lang="1" val="Ulvilantie 27"/>
+
+				<NAME lang="2" val="Ulfsbyvägen 27"/>
+			</STOP>
+			<STOP code="6:1304135" x="2548854.0" y="6677629.0" id="1337">
+				<ARRIVAL date="20101213" time="2106"/>
+				<DEPARTURE date="20101213" time="2106"/>
+				<NAME lang="1" val="Naantalintie"/>
+				<NAME lang="2" val="Nådendalsvägen"/>
+			</STOP>
+			<STOP code="6:1304137" x="2548967.0" y="6677478.0" id="1339">
+
+				<ARRIVAL date="20101213" time="2106"/>
+				<DEPARTURE date="20101213" time="2106"/>
+				<NAME lang="1" val="Munkkivuori"/>
+				<NAME lang="2" val="Munkshöjden"/>
+			</STOP>
+			<STOP code="6:1301158" x="2549077.0" y="6677036.0" id="1303">
+				<ARRIVAL date="20101213" time="2108"/>
+				<DEPARTURE date="20101213" time="2108"/>
+				<NAME lang="1" val="Niemenmäki"/>
+
+				<NAME lang="2" val="Näshöjden"/>
+			</STOP>
+			<STOP code="6:1301126" x="2549163.0" y="6676754.0" id="1296">
+				<ARRIVAL date="20101213" time="2109"/>
+				<DEPARTURE date="20101213" time="2109"/>
+				<NAME lang="1" val="Lokkalantie"/>
+				<NAME lang="2" val="Locklaisvägen"/>
+			</STOP>
+			<STOP code="6:1301124" x="2549280.0" y="6676400.0" id="1294">
+
+				<ARRIVAL date="20101213" time="2110"/>
+				<DEPARTURE date="20101213" time="2110"/>
+				<NAME lang="1" val="Munkkiniemen aukio"/>
+				<NAME lang="2" val="Munksnäsplatsen"/>
+			</STOP>
+			<STOP code="6:1150114" x="2549570.0" y="6676265.0" id="544">
+				<ARRIVAL date="20101213" time="2111"/>
+				<DEPARTURE date="20101213" time="2111"/>
+				<NAME lang="1" val="Paciuksenkaari"/>
+
+				<NAME lang="2" val="Paciussvängen"/>
+			</STOP>
+			<STOP code="6:1150112" x="2549875.0" y="6676008.0" id="542">
+				<ARRIVAL date="20101213" time="2112"/>
+				<DEPARTURE date="20101213" time="2112"/>
+				<NAME lang="1" val="Meilahdentie"/>
+				<NAME lang="2" val="Mejlansvägen"/>
+			</STOP>
+			<STOP code="6:1150132" x="2550190.0" y="6675858.0" id="559">
+
+				<ARRIVAL date="20101213" time="2113"/>
+				<DEPARTURE date="20101213" time="2113"/>
+				<NAME lang="1" val="Mäntytie"/>
+				<NAME lang="2" val="Tallvägen"/>
+			</STOP>
+			<STOP code="6:1150110" x="2550509.0" y="6675806.0" id="540">
+				<ARRIVAL date="20101213" time="2114"/>
+				<DEPARTURE date="20101213" time="2114"/>
+				<NAME lang="1" val="Haartmaninkatu"/>
+
+				<NAME lang="2" val="Haartmansgatan"/>
+			</STOP>
+			<STOP code="6:1150108" x="2550696.0" y="6675654.0" id="538">
+				<ARRIVAL date="20101213" time="2114"/>
+				<DEPARTURE date="20101213" time="2114"/>
+				<NAME lang="1" val="Naistenklinikka"/>
+				<NAME lang="2" val="Kvinnokliniken"/>
+			</STOP>
+			<STOP code="6:1140105" x="2551068.0" y="6675103.0" id="476">
+
+				<ARRIVAL date="20101213" time="2116"/>
+				<DEPARTURE date="20101213" time="2116"/>
+				<NAME lang="1" val="Linnankoskenkatu"/>
+				<NAME lang="2" val="Linnankoskigatan"/>
+			</STOP>
+			<STOP code="6:1140130" x="2551252.0" y="6674769.0" id="496">
+				<ARRIVAL date="20101213" time="2117"/>
+				<DEPARTURE date="20101213" time="2117"/>
+				<NAME lang="1" val="Töölön sairaala"/>
+
+				<NAME lang="2" val="Tölö sjukhus"/>
+			</STOP>
+			<STOP code="6:1140103" x="2551355.0" y="6674571.0" id="474" ord="21">
+				<ARRIVAL date="20101213" time="2117"/>
+				<DEPARTURE date="20101213" time="2117"/>
+				<NAME lang="1" val="Töölöntori"/>
+				<NAME lang="2" val="Tölötorg"/>
+			</STOP>
+		</LINE>
+
+		<WALK>
+			<LENGTH time="1.768" dist="123.790"/>
+			<STOP code="6:1140103" x="2551355.0" y="6674571.0" id="474">
+				<ARRIVAL date="20101213" time="2117"/>
+				<DEPARTURE date="20101213" time="2117"/>
+				<NAME lang="1" val="Töölöntori"/>
+				<NAME lang="2" val="Tölötorg"/>
+			</STOP>
+			<MAPLOC x="2551391.3" y="6674544.3" type="0">
+
+				<ARRIVAL date="20101213" time="2117"/>
+				<DEPARTURE date="20101213" time="2117"/>
+				<NAME lang="1" val="Runeberginkatu"/>
+			</MAPLOC>
+			<MAPLOC x="2551423.0" y="6674561.3" type="0">
+				<ARRIVAL date="20101213" time="2118"/>
+				<DEPARTURE date="20101213" time="2118"/>
+				<NAME lang="1" val="Runeberginkatu"/>
+			</MAPLOC>
+
+			<STOP code="6:1140447" x="2551432.0" y="6674585.0" id="528">
+				<ARRIVAL date="20101213" time="2118"/>
+				<DEPARTURE date="20101213" time="2123"/>
+				<NAME lang="1" val="Töölöntori"/>
+				<NAME lang="2" val="Tölötorg"/>
+			</STOP>
+		</WALK>
+		<LINE id="103" code="1008 61" type="2" mobility="2">
+			<LENGTH time="6.000" dist="1722.080"/>
+
+			<STOP code="6:1140447" x="2551432.0" y="6674585.0" id="528" ord="8">
+				<ARRIVAL date="20101213" time="2118"/>
+				<DEPARTURE date="20101213" time="2123"/>
+				<NAME lang="1" val="Töölöntori"/>
+				<NAME lang="2" val="Tölötorg"/>
+			</STOP>
+			<STOP code="6:1140450" x="2551680.0" y="6674871.0" id="530">
+				<ARRIVAL date="20101213" time="2125"/>
+				<DEPARTURE date="20101213" time="2125"/>
+
+				<NAME lang="1" val="Ooppera"/>
+				<NAME lang="2" val="Operan"/>
+			</STOP>
+			<STOP code="6:1140452" x="2551892.0" y="6675133.0" id="532">
+				<ARRIVAL date="20101213" time="2126"/>
+				<DEPARTURE date="20101213" time="2126"/>
+				<NAME lang="1" val="Kaupunginpuutarha"/>
+				<NAME lang="2" val="Stadsträdgården"/>
+			</STOP>
+
+			<STOP code="6:1121446" x="2552410.0" y="6675306.0" id="387">
+				<ARRIVAL date="20101213" time="2128"/>
+				<DEPARTURE date="20101213" time="2128"/>
+				<NAME lang="1" val="Linnanmäki"/>
+				<NAME lang="2" val="Borgbacken"/>
+			</STOP>
+			<STOP code="6:1121448" x="2552763.0" y="6675360.0" id="388" ord="12">
+				<ARRIVAL date="20101213" time="2129"/>
+				<DEPARTURE date="20101213" time="2129"/>
+
+				<NAME lang="1" val="Urheilutalo"/>
+				<NAME lang="2" val="Idrottshuset"/>
+			</STOP>
+		</LINE>
+		<WALK>
+			<LENGTH time="8.348" dist="614.667"/>
+			<STOP code="6:1121448" x="2552763.0" y="6675360.0" id="388">
+				<ARRIVAL date="20101213" time="2129"/>
+				<DEPARTURE date="20101213" time="2129"/>
+
+				<NAME lang="1" val="Urheilutalo"/>
+				<NAME lang="2" val="Idrottshuset"/>
+			</STOP>
+			<MAPLOC x="2552797.9" y="6675355.1" type="0">
+				<ARRIVAL date="20101213" time="2129"/>
+				<DEPARTURE date="20101213" time="2129"/>
+				<NAME lang="1" val="Läntinen Alppirinne"/>
+			</MAPLOC>
+			<MAPLOC x="2552803.6" y="6675290.2" type="0">
+
+				<ARRIVAL date="20101213" time="2130"/>
+				<DEPARTURE date="20101213" time="2130"/>
+				<NAME lang="1" val="Alppikatu"/>
+			</MAPLOC>
+			<MAPLOC x="2552843.2" y="6675292.7" type="0">
+				<ARRIVAL date="20101213" time="2131"/>
+				<DEPARTURE date="20101213" time="2131"/>
+				<NAME lang="1" val="Papinkuja"/>
+			</MAPLOC>
+
+			<MAPLOC x="2552848.0" y="6675231.4" type="0">
+				<ARRIVAL date="20101213" time="2131"/>
+				<DEPARTURE date="20101213" time="2131"/>
+				<NAME lang="1" val="Castréninkatu"/>
+			</MAPLOC>
+			<MAPLOC x="2552875.0" y="6675233.1" type="7">
+				<ARRIVAL date="20101213" time="2132"/>
+				<DEPARTURE date="20101213" time="2132"/>
+				<NAME lang="1" val="Itäinen Papinkatu"/>
+
+			</MAPLOC>
+			<MAPLOC x="2552914.6" y="6675108.5" type="0">
+				<ARRIVAL date="20101213" time="2134"/>
+				<DEPARTURE date="20101213" time="2134"/>
+				<NAME lang="1" val="Agricolankatu"/>
+			</MAPLOC>
+			<MAPLOC x="2553063.9" y="6675121.3" type="0">
+				<ARRIVAL date="20101213" time="2136"/>
+				<DEPARTURE date="20101213" time="2136"/>
+
+				<NAME lang="1" val="Fleminginkatu"/>
+			</MAPLOC>
+			<POINT uid="dest" x="2553092.0" y="6675066.0">
+				<ARRIVAL date="20101213" time="2137"/>
+				<DEPARTURE date="20101213" time="2137"/>
+			</POINT>
+		</WALK>
+		<POINT uid="dest" x="2553092.0" y="6675066.0">
+			<ARRIVAL date="20101213" time="2137"/>
+
+			<DEPARTURE date="20101213" time="2137"/>
+		</POINT>
+	</ROUTE>
+	<ROUTE from="start" to="dest">
+		<LENGTH time="33.400" dist="8067.964"/>
+		<POINT uid="start" x="2548199.0" y="6677769.0">
+			<ARRIVAL date="20101213" time="2109"/>
+			<DEPARTURE date="20101213" time="2109"/>
+		</POINT>
+
+		<WALK>
+			<LENGTH time="2.402" dist="213.531"/>
+			<POINT uid="start" x="2548199.0" y="6677769.0">
+				<ARRIVAL date="20101213" time="2109"/>
+				<DEPARTURE date="20101213" time="2109"/>
+			</POINT>
+			<STOP code="6:1304143" x="2548084.0" y="6677676.0" id="1344">
+				<ARRIVAL date="20101213" time="2112"/>
+				<DEPARTURE date="20101213" time="2112"/>
+
+				<NAME lang="1" val="Ulvilantie 19"/>
+				<NAME lang="2" val="Ulfsbyvägen 19"/>
+			</STOP>
+		</WALK>
+		<LINE id="181" code="1052  1" type="1" mobility="3">
+			<LENGTH time="5.000" dist="2406.257"/>
+			<STOP code="6:1304143" x="2548084.0" y="6677676.0" id="1344" ord="47">
+				<ARRIVAL date="20101213" time="2112"/>
+				<DEPARTURE date="20101213" time="2112"/>
+
+				<NAME lang="1" val="Ulvilantie 19"/>
+				<NAME lang="2" val="Ulfsbyvägen 19"/>
+			</STOP>
+			<STOP code="6:1304157" x="2548049.0" y="6677436.0" id="1347">
+				<ARRIVAL date="20101213" time="2112"/>
+				<DEPARTURE date="20101213" time="2112"/>
+				<NAME lang="1" val="Ulvilantie 17"/>
+				<NAME lang="2" val="Ulfsbyvägen 17"/>
+			</STOP>
+
+			<STOP code="6:1304144" x="2548424.0" y="6677214.0" id="1345">
+				<ARRIVAL date="20101213" time="2113"/>
+				<DEPARTURE date="20101213" time="2113"/>
+				<NAME lang="1" val="Porintie"/>
+				<NAME lang="2" val="Björneborgsvägen"/>
+			</STOP>
+			<STOP code="6:1301145" x="2548731.0" y="6676930.0" id="1298">
+				<ARRIVAL date="20101213" time="2114"/>
+				<DEPARTURE date="20101213" time="2114"/>
+
+				<NAME lang="1" val="Professorintie"/>
+				<NAME lang="2" val="Professorvägen"/>
+			</STOP>
+			<STOP code="6:1301103" x="2548794.0" y="6676578.0" id="1290">
+				<ARRIVAL date="20101213" time="2116"/>
+				<DEPARTURE date="20101213" time="2116"/>
+				<NAME lang="1" val="Laajalahden aukio"/>
+				<NAME lang="2" val="Bredviksplatsen"/>
+			</STOP>
+
+			<STOP code="6:1301171" x="2549132.0" y="6676446.0" id="1304">
+				<ARRIVAL date="20101213" time="2117"/>
+				<DEPARTURE date="20101213" time="2117"/>
+				<NAME lang="1" val="Munkkin. puistotie"/>
+				<NAME lang="2" val="Munksnäs allén"/>
+			</STOP>
+			<STOP code="6:1301149" x="2549275.0" y="6676373.0" id="1302" ord="53">
+				<ARRIVAL date="20101213" time="2117"/>
+				<DEPARTURE date="20101213" time="2117"/>
+
+				<NAME lang="1" val="Munkkiniemen aukio"/>
+				<NAME lang="2" val="Munksnäsplatsen"/>
+			</STOP>
+		</LINE>
+		<WALK>
+			<LENGTH time="1.602" dist="112.139"/>
+			<STOP code="6:1301149" x="2549275.0" y="6676373.0" id="1302">
+				<ARRIVAL date="20101213" time="2117"/>
+				<DEPARTURE date="20101213" time="2117"/>
+
+				<NAME lang="1" val="Munkkiniemen aukio"/>
+				<NAME lang="2" val="Munksnäsplatsen"/>
+			</STOP>
+			<MAPLOC x="2549306.4" y="6676389.0" type="11">
+				<ARRIVAL date="20101213" time="2117"/>
+				<DEPARTURE date="20101213" time="2117"/>
+			</MAPLOC>
+			<MAPLOC x="2549296.9" y="6676360.6" type="11">
+				<ARRIVAL date="20101213" time="2118"/>
+
+				<DEPARTURE date="20101213" time="2118"/>
+			</MAPLOC>
+			<STOP code="6:1301213" x="2549309.0" y="6676344.0" id="1306">
+				<ARRIVAL date="20101213" time="2118"/>
+				<DEPARTURE date="20101213" time="2123"/>
+				<NAME lang="1" val="Munkkiniemen aukio"/>
+				<NAME lang="2" val="Munksnäsplatsen"/>
+			</STOP>
+		</WALK>
+
+		<LINE id="772" code="2506  2" type="5" mobility="3">
+			<LENGTH time="6.000" dist="3056.797"/>
+			<STOP code="6:1301213" x="2549309.0" y="6676344.0" id="1306" ord="16">
+				<ARRIVAL date="20101213" time="2118"/>
+				<DEPARTURE date="20101213" time="2123"/>
+				<NAME lang="1" val="Munkkiniemen aukio"/>
+				<NAME lang="2" val="Munksnäsplatsen"/>
+			</STOP>
+			<STOP code="6:1150214" x="2549570.0" y="6676265.0" id="568">
+
+				<ARRIVAL date="20101213" time="2123"/>
+				<DEPARTURE date="20101213" time="2123"/>
+				<NAME lang="1" val="Paciuksenkaari"/>
+				<NAME lang="2" val="Paciussvängen"/>
+			</STOP>
+			<STOP code="6:1150212" x="2549875.0" y="6676008.0" id="566">
+				<ARRIVAL date="20101213" time="2124"/>
+				<DEPARTURE date="20101213" time="2124"/>
+				<NAME lang="1" val="Meilahdentie"/>
+
+				<NAME lang="2" val="Mejlansvägen"/>
+			</STOP>
+			<STOP code="6:1150217" x="2550619.0" y="6675850.0" id="570">
+				<ARRIVAL date="20101213" time="2126"/>
+				<DEPARTURE date="20101213" time="2126"/>
+				<NAME lang="1" val="Tukholmankatu"/>
+				<NAME lang="2" val="Stockholmsgatan"/>
+			</STOP>
+			<STOP code="6:1150234" x="2550742.0" y="6675839.0" id="8314">
+
+				<ARRIVAL date="20101213" time="2126"/>
+				<DEPARTURE date="20101213" time="2126"/>
+				<NAME lang="1" val="Töölön tulli"/>
+				<NAME lang="2" val="Tölö tull"/>
+			</STOP>
+			<STOP code="6:1180224" x="2551185.0" y="6675697.0" id="736">
+				<ARRIVAL date="20101213" time="2127"/>
+				<DEPARTURE date="20101213" time="2127"/>
+				<NAME lang="1" val="Reijolankatu"/>
+
+				<NAME lang="2" val="Grejusgatan"/>
+			</STOP>
+			<STOP code="6:1171222" x="2551514.0" y="6675895.0" id="624">
+				<ARRIVAL date="20101213" time="2128"/>
+				<DEPARTURE date="20101213" time="2128"/>
+				<NAME lang="1" val="Auroran sairaala"/>
+				<NAME lang="2" val="Aurorasjukhuset"/>
+			</STOP>
+			<STOP code="6:1171227" x="2551752.0" y="6676056.0" id="628" ord="23">
+
+				<ARRIVAL date="20101213" time="2129"/>
+				<DEPARTURE date="20101213" time="2129"/>
+				<NAME lang="1" val="Eläintarha"/>
+				<NAME lang="2" val="Djurgården"/>
+			</STOP>
+		</LINE>
+		<WALK>
+			<LENGTH time="1.079" dist="75.496"/>
+			<STOP code="6:1171227" x="2551752.0" y="6676056.0" id="628">
+
+				<ARRIVAL date="20101213" time="2129"/>
+				<DEPARTURE date="20101213" time="2129"/>
+				<NAME lang="1" val="Eläintarha"/>
+				<NAME lang="2" val="Djurgården"/>
+			</STOP>
+			<MAPLOC x="2551750.1" y="6676032.5" type="7">
+				<ARRIVAL date="20101213" time="2129"/>
+				<DEPARTURE date="20101213" time="2129"/>
+			</MAPLOC>
+
+			<MAPLOC x="2551759.9" y="6676034.8" type="7">
+				<ARRIVAL date="20101213" time="2129"/>
+				<DEPARTURE date="20101213" time="2129"/>
+			</MAPLOC>
+			<MAPLOC x="2551767.0" y="6676013.8" type="0">
+				<ARRIVAL date="20101213" time="2129"/>
+				<DEPARTURE date="20101213" time="2129"/>
+				<NAME lang="1" val="Nordenskiöldinkatu"/>
+			</MAPLOC>
+
+			<STOP code="6:1171444" x="2551780.0" y="6676017.0" id="649">
+				<ARRIVAL date="20101213" time="2130"/>
+				<DEPARTURE date="20101213" time="2133"/>
+				<NAME lang="1" val="Eläintarha"/>
+				<NAME lang="2" val="Djurgården"/>
+			</STOP>
+		</WALK>
+		<LINE id="24" code="1003B 2" type="2" mobility="2">
+			<LENGTH time="9.000" dist="2103.979"/>
+
+			<STOP code="6:1171444" x="2551780.0" y="6676017.0" id="649" ord="1">
+				<ARRIVAL date="20101213" time="2130"/>
+				<DEPARTURE date="20101213" time="2133"/>
+				<NAME lang="1" val="Eläintarha"/>
+				<NAME lang="2" val="Djurgården"/>
+			</STOP>
+			<STOP code="6:1122416" x="2552118.0" y="6676004.0" id="420">
+				<ARRIVAL date="20101213" time="2134"/>
+				<DEPARTURE date="20101213" time="2134"/>
+
+				<NAME lang="1" val="Karjalankatu"/>
+				<NAME lang="2" val="Karelargatan"/>
+			</STOP>
+			<STOP code="6:1122414" x="2552361.0" y="6675885.0" id="418">
+				<ARRIVAL date="20101213" time="2136"/>
+				<DEPARTURE date="20101213" time="2136"/>
+				<NAME lang="1" val="Alppila"/>
+				<NAME lang="2" val="Alphyddan"/>
+			</STOP>
+
+			<STOP code="6:1122441" x="2552607.0" y="6675837.0" id="422">
+				<ARRIVAL date="20101213" time="2137"/>
+				<DEPARTURE date="20101213" time="2137"/>
+				<NAME lang="1" val="Porvoonkatu"/>
+				<NAME lang="2" val="Borgågatan"/>
+			</STOP>
+			<STOP code="6:1121481" x="2552786.0" y="6675409.0" id="393">
+				<ARRIVAL date="20101213" time="2139"/>
+				<DEPARTURE date="20101213" time="2139"/>
+
+				<NAME lang="1" val="Urheilutalo"/>
+				<NAME lang="2" val="Idrottshuset"/>
+			</STOP>
+			<STOP code="6:1112436" x="2552960.0" y="6675265.0" id="349">
+				<ARRIVAL date="20101213" time="2141"/>
+				<DEPARTURE date="20101213" time="2141"/>
+				<NAME lang="1" val="Kaarlenkatu"/>
+				<NAME lang="2" val="Karlsgatan"/>
+			</STOP>
+
+			<STOP code="6:1112434" x="2553032.0" y="6675042.0" id="348" ord="7">
+				<ARRIVAL date="20101213" time="2142"/>
+				<DEPARTURE date="20101213" time="2142"/>
+				<NAME lang="1" val="Karhupuisto"/>
+				<NAME lang="2" val="Björnparken"/>
+			</STOP>
+		</LINE>
+		<WALK>
+			<LENGTH time="0.998" dist="99.765"/>
+
+			<STOP code="6:1112434" x="2553032.0" y="6675042.0" id="348">
+				<ARRIVAL date="20101213" time="2142"/>
+				<DEPARTURE date="20101213" time="2142"/>
+				<NAME lang="1" val="Karhupuisto"/>
+				<NAME lang="2" val="Björnparken"/>
+			</STOP>
+			<MAPLOC x="2553055.1" y="6675030.7" type="0">
+				<ARRIVAL date="20101213" time="2142"/>
+				<DEPARTURE date="20101213" time="2142"/>
+
+			</MAPLOC>
+			<MAPLOC x="2553059.6" y="6675036.7" type="0">
+				<ARRIVAL date="20101213" time="2142"/>
+				<DEPARTURE date="20101213" time="2142"/>
+			</MAPLOC>
+			<MAPLOC x="2553070.2" y="6675037.0" type="0">
+				<ARRIVAL date="20101213" time="2142"/>
+				<DEPARTURE date="20101213" time="2142"/>
+				<NAME lang="1" val="Fleminginkatu"/>
+
+			</MAPLOC>
+			<POINT uid="dest" x="2553092.0" y="6675066.0">
+				<ARRIVAL date="20101213" time="2142"/>
+				<DEPARTURE date="20101213" time="2142"/>
+			</POINT>
+		</WALK>
+		<POINT uid="dest" x="2553092.0" y="6675066.0">
+			<ARRIVAL date="20101213" time="2142"/>
+			<DEPARTURE date="20101213" time="2142"/>
+
+		</POINT>
+	</ROUTE>
+	<ROUTE from="start" to="dest">
+		<LENGTH time="34.605" dist="8150.277"/>
+		<POINT uid="start" x="2548199.0" y="6677769.0">
+			<ARRIVAL date="20101213" time="2122"/>
+			<DEPARTURE date="20101213" time="2122"/>
+		</POINT>
+		<WALK>
+
+			<LENGTH time="1.257" dist="132.387"/>
+			<POINT uid="start" x="2548199.0" y="6677769.0">
+				<ARRIVAL date="20101213" time="2122"/>
+				<DEPARTURE date="20101213" time="2122"/>
+			</POINT>
+			<MAPLOC x="2548250.4" y="6677834.0" type="0">
+				<ARRIVAL date="20101213" time="2124"/>
+				<DEPARTURE date="20101213" time="2124"/>
+			</MAPLOC>
+
+			<STOP code="6:1304133" x="2548265.0" y="6677828.0" id="1335">
+				<ARRIVAL date="20101213" time="2124"/>
+				<DEPARTURE date="20101213" time="2124"/>
+				<NAME lang="1" val="Ulvilantie 21"/>
+				<NAME lang="2" val="Ulfsbyvägen 21"/>
+			</STOP>
+		</WALK>
+		<LINE id="138" code="1018  2" type="1" mobility="3">
+			<LENGTH time="13.000" dist="5557.353"/>
+
+			<STOP code="6:1304133" x="2548265.0" y="6677828.0" id="1335" ord="7">
+				<ARRIVAL date="20101213" time="2124"/>
+				<DEPARTURE date="20101213" time="2124"/>
+				<NAME lang="1" val="Ulvilantie 21"/>
+				<NAME lang="2" val="Ulfsbyvägen 21"/>
+			</STOP>
+			<STOP code="6:1304134" x="2548692.0" y="6677805.0" id="1336">
+				<ARRIVAL date="20101213" time="2125"/>
+				<DEPARTURE date="20101213" time="2125"/>
+
+				<NAME lang="1" val="Ulvilantie 27"/>
+				<NAME lang="2" val="Ulfsbyvägen 27"/>
+			</STOP>
+			<STOP code="6:1304135" x="2548854.0" y="6677629.0" id="1337">
+				<ARRIVAL date="20101213" time="2126"/>
+				<DEPARTURE date="20101213" time="2126"/>
+				<NAME lang="1" val="Naantalintie"/>
+				<NAME lang="2" val="Nådendalsvägen"/>
+			</STOP>
+
+			<STOP code="6:1304137" x="2548967.0" y="6677478.0" id="1339">
+				<ARRIVAL date="20101213" time="2126"/>
+				<DEPARTURE date="20101213" time="2126"/>
+				<NAME lang="1" val="Munkkivuori"/>
+				<NAME lang="2" val="Munkshöjden"/>
+			</STOP>
+			<STOP code="6:1301158" x="2549077.0" y="6677036.0" id="1303">
+				<ARRIVAL date="20101213" time="2128"/>
+				<DEPARTURE date="20101213" time="2128"/>
+
+				<NAME lang="1" val="Niemenmäki"/>
+				<NAME lang="2" val="Näshöjden"/>
+			</STOP>
+			<STOP code="6:1301126" x="2549163.0" y="6676754.0" id="1296">
+				<ARRIVAL date="20101213" time="2129"/>
+				<DEPARTURE date="20101213" time="2129"/>
+				<NAME lang="1" val="Lokkalantie"/>
+				<NAME lang="2" val="Locklaisvägen"/>
+			</STOP>
+
+			<STOP code="6:1301124" x="2549280.0" y="6676400.0" id="1294">
+				<ARRIVAL date="20101213" time="2130"/>
+				<DEPARTURE date="20101213" time="2130"/>
+				<NAME lang="1" val="Munkkiniemen aukio"/>
+				<NAME lang="2" val="Munksnäsplatsen"/>
+			</STOP>
+			<STOP code="6:1150114" x="2549570.0" y="6676265.0" id="544">
+				<ARRIVAL date="20101213" time="2131"/>
+				<DEPARTURE date="20101213" time="2131"/>
+
+				<NAME lang="1" val="Paciuksenkaari"/>
+				<NAME lang="2" val="Paciussvängen"/>
+			</STOP>
+			<STOP code="6:1150112" x="2549875.0" y="6676008.0" id="542">
+				<ARRIVAL date="20101213" time="2132"/>
+				<DEPARTURE date="20101213" time="2132"/>
+				<NAME lang="1" val="Meilahdentie"/>
+				<NAME lang="2" val="Mejlansvägen"/>
+			</STOP>
+
+			<STOP code="6:1150132" x="2550190.0" y="6675858.0" id="559">
+				<ARRIVAL date="20101213" time="2133"/>
+				<DEPARTURE date="20101213" time="2133"/>
+				<NAME lang="1" val="Mäntytie"/>
+				<NAME lang="2" val="Tallvägen"/>
+			</STOP>
+			<STOP code="6:1150110" x="2550509.0" y="6675806.0" id="540">
+				<ARRIVAL date="20101213" time="2134"/>
+				<DEPARTURE date="20101213" time="2134"/>
+
+				<NAME lang="1" val="Haartmaninkatu"/>
+				<NAME lang="2" val="Haartmansgatan"/>
+			</STOP>
+			<STOP code="6:1150108" x="2550696.0" y="6675654.0" id="538">
+				<ARRIVAL date="20101213" time="2134"/>
+				<DEPARTURE date="20101213" time="2134"/>
+				<NAME lang="1" val="Naistenklinikka"/>
+				<NAME lang="2" val="Kvinnokliniken"/>
+			</STOP>
+
+			<STOP code="6:1140105" x="2551068.0" y="6675103.0" id="476">
+				<ARRIVAL date="20101213" time="2136"/>
+				<DEPARTURE date="20101213" time="2136"/>
+				<NAME lang="1" val="Linnankoskenkatu"/>
+				<NAME lang="2" val="Linnankoskigatan"/>
+			</STOP>
+			<STOP code="6:1140130" x="2551252.0" y="6674769.0" id="496">
+				<ARRIVAL date="20101213" time="2137"/>
+				<DEPARTURE date="20101213" time="2137"/>
+
+				<NAME lang="1" val="Töölön sairaala"/>
+				<NAME lang="2" val="Tölö sjukhus"/>
+			</STOP>
+			<STOP code="6:1140103" x="2551355.0" y="6674571.0" id="474" ord="21">
+				<ARRIVAL date="20101213" time="2137"/>
+				<DEPARTURE date="20101213" time="2137"/>
+				<NAME lang="1" val="Töölöntori"/>
+				<NAME lang="2" val="Tölötorg"/>
+			</STOP>
+
+		</LINE>
+		<WALK>
+			<LENGTH time="1.768" dist="123.790"/>
+			<STOP code="6:1140103" x="2551355.0" y="6674571.0" id="474">
+				<ARRIVAL date="20101213" time="2137"/>
+				<DEPARTURE date="20101213" time="2137"/>
+				<NAME lang="1" val="Töölöntori"/>
+				<NAME lang="2" val="Tölötorg"/>
+			</STOP>
+
+			<MAPLOC x="2551391.3" y="6674544.3" type="0">
+				<ARRIVAL date="20101213" time="2137"/>
+				<DEPARTURE date="20101213" time="2137"/>
+				<NAME lang="1" val="Runeberginkatu"/>
+			</MAPLOC>
+			<MAPLOC x="2551423.0" y="6674561.3" type="0">
+				<ARRIVAL date="20101213" time="2138"/>
+				<DEPARTURE date="20101213" time="2138"/>
+				<NAME lang="1" val="Runeberginkatu"/>
+
+			</MAPLOC>
+			<STOP code="6:1140447" x="2551432.0" y="6674585.0" id="528">
+				<ARRIVAL date="20101213" time="2138"/>
+				<DEPARTURE date="20101213" time="2144"/>
+				<NAME lang="1" val="Töölöntori"/>
+				<NAME lang="2" val="Tölötorg"/>
+			</STOP>
+		</WALK>
+		<LINE id="95" code="1008  1" type="2" mobility="3">
+
+			<LENGTH time="5.000" dist="1722.080"/>
+			<STOP code="6:1140447" x="2551432.0" y="6674585.0" id="528" ord="8">
+				<ARRIVAL date="20101213" time="2138"/>
+				<DEPARTURE date="20101213" time="2144"/>
+				<NAME lang="1" val="Töölöntori"/>
+				<NAME lang="2" val="Tölötorg"/>
+			</STOP>
+			<STOP code="6:1140450" x="2551680.0" y="6674871.0" id="530">
+				<ARRIVAL date="20101213" time="2146"/>
+
+				<DEPARTURE date="20101213" time="2146"/>
+				<NAME lang="1" val="Ooppera"/>
+				<NAME lang="2" val="Operan"/>
+			</STOP>
+			<STOP code="6:1140452" x="2551892.0" y="6675133.0" id="532">
+				<ARRIVAL date="20101213" time="2147"/>
+				<DEPARTURE date="20101213" time="2147"/>
+				<NAME lang="1" val="Kaupunginpuutarha"/>
+				<NAME lang="2" val="Stadsträdgården"/>
+
+			</STOP>
+			<STOP code="6:1121446" x="2552410.0" y="6675306.0" id="387">
+				<ARRIVAL date="20101213" time="2148"/>
+				<DEPARTURE date="20101213" time="2148"/>
+				<NAME lang="1" val="Linnanmäki"/>
+				<NAME lang="2" val="Borgbacken"/>
+			</STOP>
+			<STOP code="6:1121448" x="2552763.0" y="6675360.0" id="388" ord="12">
+				<ARRIVAL date="20101213" time="2149"/>
+
+				<DEPARTURE date="20101213" time="2149"/>
+				<NAME lang="1" val="Urheilutalo"/>
+				<NAME lang="2" val="Idrottshuset"/>
+			</STOP>
+		</LINE>
+		<WALK>
+			<LENGTH time="8.348" dist="614.667"/>
+			<STOP code="6:1121448" x="2552763.0" y="6675360.0" id="388">
+				<ARRIVAL date="20101213" time="2149"/>
+
+				<DEPARTURE date="20101213" time="2149"/>
+				<NAME lang="1" val="Urheilutalo"/>
+				<NAME lang="2" val="Idrottshuset"/>
+			</STOP>
+			<MAPLOC x="2552797.9" y="6675355.1" type="0">
+				<ARRIVAL date="20101213" time="2149"/>
+				<DEPARTURE date="20101213" time="2149"/>
+				<NAME lang="1" val="Läntinen Alppirinne"/>
+			</MAPLOC>
+
+			<MAPLOC x="2552803.6" y="6675290.2" type="0">
+				<ARRIVAL date="20101213" time="2150"/>
+				<DEPARTURE date="20101213" time="2150"/>
+				<NAME lang="1" val="Alppikatu"/>
+			</MAPLOC>
+			<MAPLOC x="2552843.2" y="6675292.7" type="0">
+				<ARRIVAL date="20101213" time="2151"/>
+				<DEPARTURE date="20101213" time="2151"/>
+				<NAME lang="1" val="Papinkuja"/>
+
+			</MAPLOC>
+			<MAPLOC x="2552848.0" y="6675231.4" type="0">
+				<ARRIVAL date="20101213" time="2151"/>
+				<DEPARTURE date="20101213" time="2151"/>
+				<NAME lang="1" val="Castréninkatu"/>
+			</MAPLOC>
+			<MAPLOC x="2552875.0" y="6675233.1" type="7">
+				<ARRIVAL date="20101213" time="2152"/>
+				<DEPARTURE date="20101213" time="2152"/>
+
+				<NAME lang="1" val="Itäinen Papinkatu"/>
+			</MAPLOC>
+			<MAPLOC x="2552914.6" y="6675108.5" type="0">
+				<ARRIVAL date="20101213" time="2154"/>
+				<DEPARTURE date="20101213" time="2154"/>
+				<NAME lang="1" val="Agricolankatu"/>
+			</MAPLOC>
+			<MAPLOC x="2553063.9" y="6675121.3" type="0">
+				<ARRIVAL date="20101213" time="2156"/>
+
+				<DEPARTURE date="20101213" time="2156"/>
+				<NAME lang="1" val="Fleminginkatu"/>
+			</MAPLOC>
+			<POINT uid="dest" x="2553092.0" y="6675066.0">
+				<ARRIVAL date="20101213" time="2157"/>
+				<DEPARTURE date="20101213" time="2157"/>
+			</POINT>
+		</WALK>
+		<POINT uid="dest" x="2553092.0" y="6675066.0">
+
+			<ARRIVAL date="20101213" time="2157"/>
+			<DEPARTURE date="20101213" time="2157"/>
+		</POINT>
+	</ROUTE>
+</MTRXML>

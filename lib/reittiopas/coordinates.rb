@@ -19,6 +19,10 @@ class Location
         @x = opts[:x].to_i
         @y = opts[:y].to_i
       end
+      
+      def to_routing_string
+        "#{@x},#{@y}"
+      end
     end
   end
 end

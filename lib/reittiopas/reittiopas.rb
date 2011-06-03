@@ -3,7 +3,8 @@
 #
 class Reittiopas
   include Geocoding
-
+  include Routing
+  
   # Instantiate a Reittiopas object.
   #
   # [account] A hash containing the keys +:username+ and +:password+ with
