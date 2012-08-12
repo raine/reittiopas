@@ -1,0 +1,709 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: Reittiopas::Routing::Route
+  
+    &mdash; Reittiopas (0.1.0)
+  
+</title>
+
+  <link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../../';
+  framesUrl = "../../frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../../_index.html">Index (R)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../Reittiopas.html" title="Reittiopas (class)">Reittiopas</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../Routing.html" title="Reittiopas::Routing (module)">Routing</a></span></span>
+     &raquo; 
+    <span class="title">Route</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: Reittiopas::Routing::Route
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">Reittiopas::Routing::Route</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/reittiopas/routing.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+
+
+
+  <h2>Instance Attribute Summary <small>(<a href="#" class="summary_toggle">collapse</a>)</small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#distance-instance_method" title="#distance (instance method)">- (Object) <strong>distance</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Returns the value of attribute distance.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#lines-instance_method" title="#lines (instance method)">- (Object) <strong>lines</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Returns the value of attribute lines.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#parts-instance_method" title="#parts (instance method)">- (Object) <strong>parts</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Returns the value of attribute parts.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#time-instance_method" title="#time (instance method)">- (Object) <strong>time</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Returns the value of attribute time.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#walks-instance_method" title="#walks (instance method)">- (Object) <strong>walks</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Returns the value of attribute walks.</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#parse-class_method" title="parse (class method)">+ (Object) <strong>parse</strong>(xml) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Parse the route and sub elements.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (Route) <strong>initialize</strong>(opts) </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>A new instance of Route.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="Reittiopas::Routing::Route (class)">Route</a></span></tt>) <strong>initialize</strong>(opts) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>A new instance of Route</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+32
+33
+34
+35
+36
+37</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/reittiopas/routing.rb', line 32</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_initialize identifier id'>initialize</span><span class='lparen token'>(</span><span class='rubyid_opts identifier id'>opts</span><span class='rparen token'>)</span>
+  <span class='rubyid_@time ivar id'>@time</span> <span class='assign token'>=</span> <span class='rubyid_opts identifier id'>opts</span><span class='lbrack token'>[</span><span class='symbol val'>:time</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='rubyid_to_f identifier id'>to_f</span> <span class='rubyid_if if_mod kw'>if</span> <span class='rubyid_opts identifier id'>opts</span><span class='lbrack token'>[</span><span class='symbol val'>:time</span><span class='rbrack token'>]</span>
+  <span class='rubyid_@distance ivar id'>@distance</span> <span class='assign token'>=</span> <span class='rubyid_opts identifier id'>opts</span><span class='lbrack token'>[</span><span class='symbol val'>:distance</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='rubyid_to_f identifier id'>to_f</span> <span class='rubyid_if if_mod kw'>if</span> <span class='rubyid_opts identifier id'>opts</span><span class='lbrack token'>[</span><span class='symbol val'>:distance</span><span class='rbrack token'>]</span>
+  
+  <span class='rubyid_@parts ivar id'>@parts</span><span class='comma token'>,</span> <span class='rubyid_@walks ivar id'>@walks</span><span class='comma token'>,</span> <span class='rubyid_@lines ivar id'>@lines</span> <span class='assign token'>=</span> <span class='rubyid_opts identifier id'>opts</span><span class='lbrack token'>[</span><span class='symbol val'>:parts</span><span class='rbrack token'>]</span><span class='comma token'>,</span> <span class='rubyid_opts identifier id'>opts</span><span class='lbrack token'>[</span><span class='symbol val'>:walks</span><span class='rbrack token'>]</span><span class='comma token'>,</span> <span class='rubyid_opts identifier id'>opts</span><span class='lbrack token'>[</span><span class='symbol val'>:lines</span><span class='rbrack token'>]</span>      
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id=""></span>
+      <div class="method_details first">
+  <h3 class="signature first" id="distance-instance_method">
+  
+    - (<tt>Object</tt>) <strong>distance</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Returns the value of attribute distance</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+30
+31
+32</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/reittiopas/routing.rb', line 30</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_distance identifier id'>distance</span>
+  <span class='rubyid_@distance ivar id'>@distance</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="lines-instance_method">
+  
+    - (<tt>Object</tt>) <strong>lines</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Returns the value of attribute lines</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+30
+31
+32</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/reittiopas/routing.rb', line 30</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_lines identifier id'>lines</span>
+  <span class='rubyid_@lines ivar id'>@lines</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="parts-instance_method">
+  
+    - (<tt>Object</tt>) <strong>parts</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Returns the value of attribute parts</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+30
+31
+32</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/reittiopas/routing.rb', line 30</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_parts identifier id'>parts</span>
+  <span class='rubyid_@parts ivar id'>@parts</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="time-instance_method">
+  
+    - (<tt>Object</tt>) <strong>time</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Returns the value of attribute time</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+30
+31
+32</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/reittiopas/routing.rb', line 30</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_time identifier id'>time</span>
+  <span class='rubyid_@time ivar id'>@time</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="walks-instance_method">
+  
+    - (<tt>Object</tt>) <strong>walks</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Returns the value of attribute walks</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+30
+31
+32</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/reittiopas/routing.rb', line 30</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_walks identifier id'>walks</span>
+  <span class='rubyid_@walks ivar id'>@walks</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="parse-class_method">
+  
+    + (<tt>Object</tt>) <strong>parse</strong>(xml) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Parse the route and sub elements</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/reittiopas/routing.rb', line 41</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_self self kw'>self</span><span class='dot token'>.</span><span class='rubyid_parse identifier id'>parse</span><span class='lparen token'>(</span><span class='rubyid_xml identifier id'>xml</span><span class='rparen token'>)</span>
+  <span class='rubyid_length_element identifier id'>length_element</span> <span class='assign token'>=</span> <span class='rubyid_xml identifier id'>xml</span><span class='dot token'>.</span><span class='rubyid_search identifier id'>search</span><span class='lparen token'>(</span><span class='string val'>&quot;LENGTH&quot;</span><span class='rparen token'>)</span><span class='dot token'>.</span><span class='rubyid_first identifier id'>first</span>
+  
+  <span class='rubyid_time identifier id'>time</span> <span class='assign token'>=</span> <span class='rubyid_length_element identifier id'>length_element</span><span class='dot token'>.</span><span class='rubyid_get_attr_value identifier id'>get_attr_value</span> <span class='string val'>&quot;time&quot;</span>
+  <span class='rubyid_dist identifier id'>dist</span> <span class='assign token'>=</span> <span class='rubyid_length_element identifier id'>length_element</span><span class='dot token'>.</span><span class='rubyid_get_attr_value identifier id'>get_attr_value</span> <span class='string val'>&quot;dist&quot;</span>
+    
+  <span class='rubyid_parts identifier id'>parts</span><span class='comma token'>,</span> <span class='rubyid_walks identifier id'>walks</span><span class='comma token'>,</span> <span class='rubyid_lines identifier id'>lines</span> <span class='assign token'>=</span> <span class='lbrack token'>[</span><span class='rbrack token'>]</span><span class='comma token'>,</span> <span class='lbrack token'>[</span><span class='rbrack token'>]</span><span class='comma token'>,</span> <span class='lbrack token'>[</span><span class='rbrack token'>]</span>
+  
+  <span class='rubyid_xml identifier id'>xml</span><span class='dot token'>.</span><span class='rubyid_elements identifier id'>elements</span><span class='dot token'>.</span><span class='rubyid_each identifier id'>each</span> <span class='rubyid_do do kw'>do</span> <span class='bitor op'>|</span><span class='rubyid_e identifier id'>e</span><span class='bitor op'>|</span>
+    <span class='rubyid_next next kw'>next</span> <span class='rubyid_if if_mod kw'>if</span> <span class='rubyid_e identifier id'>e</span><span class='dot token'>.</span><span class='rubyid_name identifier id'>name</span> <span class='eq op'>==</span> <span class='string val'>&quot;LENGTH&quot;</span>
+    <span class='rubyid_case case kw'>case</span> <span class='rubyid_e identifier id'>e</span><span class='dot token'>.</span><span class='rubyid_name identifier id'>name</span>
+      <span class='rubyid_when when kw'>when</span> <span class='string val'>&quot;POINT&quot;</span>
+        <span class='rubyid_parts identifier id'>parts</span> <span class='lshft op'>&lt;&lt;</span> <span class='rubyid_Point constant id'>Point</span><span class='dot token'>.</span><span class='rubyid_parse identifier id'>parse</span><span class='lparen token'>(</span><span class='rubyid_e identifier id'>e</span><span class='rparen token'>)</span>
+      <span class='rubyid_when when kw'>when</span> <span class='string val'>&quot;WALK&quot;</span>
+        <span class='rubyid_walk identifier id'>walk</span> <span class='assign token'>=</span> <span class='rubyid_Walk constant id'>Walk</span><span class='dot token'>.</span><span class='rubyid_parse identifier id'>parse</span><span class='lparen token'>(</span><span class='rubyid_e identifier id'>e</span><span class='rparen token'>)</span>
+        <span class='rubyid_parts identifier id'>parts</span> <span class='lshft op'>&lt;&lt;</span> <span class='rubyid_walk identifier id'>walk</span>
+        <span class='rubyid_walks identifier id'>walks</span> <span class='lshft op'>&lt;&lt;</span> <span class='rubyid_walk identifier id'>walk</span>
+      <span class='rubyid_when when kw'>when</span> <span class='string val'>&quot;LINE&quot;</span>
+        <span class='rubyid_line identifier id'>line</span> <span class='assign token'>=</span> <span class='rubyid_Line constant id'>Line</span><span class='dot token'>.</span><span class='rubyid_parse identifier id'>parse</span><span class='lparen token'>(</span><span class='rubyid_e identifier id'>e</span><span class='rparen token'>)</span>
+        <span class='rubyid_parts identifier id'>parts</span> <span class='lshft op'>&lt;&lt;</span> <span class='rubyid_line identifier id'>line</span>
+        <span class='rubyid_lines identifier id'>lines</span> <span class='lshft op'>&lt;&lt;</span> <span class='rubyid_line identifier id'>line</span>
+    <span class='rubyid_end end kw'>end</span>
+
+  <span class='rubyid_end end kw'>end</span>
+
+  <span class='rubyid_new identifier id'>new</span><span class='lparen token'>(</span><span class='symbol val'>:time</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='rubyid_time identifier id'>time</span><span class='comma token'>,</span>
+      <span class='symbol val'>:distance</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='rubyid_dist identifier id'>dist</span><span class='comma token'>,</span>
+      <span class='symbol val'>:parts</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='rubyid_parts identifier id'>parts</span><span class='comma token'>,</span>
+      <span class='symbol val'>:walks</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='rubyid_walks identifier id'>walks</span><span class='comma token'>,</span>
+      <span class='symbol val'>:lines</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='rubyid_lines identifier id'>lines</span><span class='rparen token'>)</span>
+      
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Sun Aug 12 22:55:13 2012 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.2.1 (ruby-1.8.7).
+</div>
+
+  </body>
+</html>

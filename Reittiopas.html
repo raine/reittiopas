@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: Reittiopas
+  
+    &mdash; Reittiopas (0.1.0)
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index (R)</a> &raquo;
+    
+    
+    <span class="title">Reittiopas</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: Reittiopas
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">Reittiopas</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+      <dt class="r2">Includes:</dt>
+      <dd class="r2"><span class='object_link'><a href="Reittiopas/Geocoding.html" title="Reittiopas::Geocoding (module)">Geocoding</a></span>, <span class='object_link'><a href="Reittiopas/Routing.html" title="Reittiopas::Routing (module)">Routing</a></span></dd>
+      
+    
+  
+  
+  
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">lib/reittiopas/reittiopas.rb<span class="defines">,<br />
+  lib/reittiopas.rb,<br /> lib/reittiopas/http.rb,<br /> lib/reittiopas/routing.rb,<br /> lib/reittiopas/location.rb,<br /> lib/reittiopas/geocoding.rb,<br /> lib/reittiopas/exceptions.rb,<br /> lib/reittiopas/coordinates.rb</span>
+</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    <p>Reittiopas is a Ruby library for accessing the
+<span class='object_link'><a href="" title="Reittiopas (class)">Developer API</a></span>[<a href="http://developer.reittiopas.fi/pages/fi/reittiopas-api.php">http://developer.reittiopas.fi/pages/fi/reittiopas-api.php</a>].</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><h2>Defined Under Namespace</h2>
+<p class="children">
+  
+    
+      <strong class="modules">Modules:</strong> <span class='object_link'><a href="Reittiopas/Geocoding.html" title="Reittiopas::Geocoding (module)">Geocoding</a></span>, <span class='object_link'><a href="Reittiopas/Routing.html" title="Reittiopas::Routing (module)">Routing</a></span>
+    
+  
+    
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="Reittiopas/AccessError.html" title="Reittiopas::AccessError (class)">AccessError</a></span>, <span class='object_link'><a href="Reittiopas/HTTP.html" title="Reittiopas::HTTP (class)">HTTP</a></span>, <span class='object_link'><a href="Reittiopas/Location.html" title="Reittiopas::Location (class)">Location</a></span>
+    
+  
+</p>
+
+  <h2>Constant Summary</h2>
+  
+    <dl class="constants">
+      
+        <dt id="VERSION-constant" class="">VERSION =
+          <div class="docstring">
+  <div class="discussion">
+    <p>The version of Reittiopas you are using.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+        </dt>
+        <dd><pre class="code"><span class='string val'>&quot;0.1.0&quot;</span>
+</pre></dd>
+      
+    </dl>
+  
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (Reittiopas) <strong>initialize</strong>(account) </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Instantiate a Reittiopas object.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Reittiopas/Routing.html" title="Reittiopas::Routing (module)">Routing</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Reittiopas/Routing.html#routing-instance_method" title="Reittiopas::Routing#routing (method)">#routing</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Reittiopas/Geocoding.html" title="Reittiopas::Geocoding (module)">Geocoding</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Reittiopas/Geocoding.html#location-instance_method" title="Reittiopas::Geocoding#location (method)">#location</a></span></p>
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="Reittiopas (class)">Reittiopas</a></span></tt>) <strong>initialize</strong>(account) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Instantiate a Reittiopas object.</p>
+
+<p>[account] A hash containing the keys +:username+ and +:password+ with
+          their respective values.</p>
+
+<p>Reittiopas.new(:username =&gt; &#39;exampleuser&#39;, :password =&gt; &#39;lolcat&#39;)</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+14
+15
+16
+17</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/reittiopas/reittiopas.rb', line 14</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_initialize identifier id'>initialize</span><span class='lparen token'>(</span><span class='rubyid_account identifier id'>account</span><span class='rparen token'>)</span>
+  <span class='rubyid_account identifier id'>account</span><span class='dot token'>.</span><span class='rubyid_assert_required_and_valid_keys identifier id'>assert_required_and_valid_keys</span> <span class='symbol val'>:username</span><span class='comma token'>,</span> <span class='symbol val'>:password</span>
+  <span class='rubyid_@http ivar id'>@http</span> <span class='assign token'>=</span> <span class='rubyid_Reittiopas constant id'>Reittiopas</span><span class='colon2 op'>::</span><span class='rubyid_HTTP constant id'>HTTP</span><span class='dot token'>.</span><span class='rubyid_new identifier id'>new</span><span class='lparen token'>(</span><span class='rubyid_account identifier id'>account</span><span class='rparen token'>)</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+</div>
+
+    <div id="footer">
+  Generated on Sun Aug 12 22:55:12 2012 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.2.1 (ruby-1.8.7).
+</div>
+
+  </body>
+</html>

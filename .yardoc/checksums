@@ -1,0 +1,9 @@
+lib/reittiopas/exceptions.rb c3d2abd5037e5971a29bc760b14171f8bba8c0b0
+lib/reittiopas.rb cced8096a3f0992a8d81ae358594e52a6149fff2
+lib/reittiopas/location.rb ddaf1913f5f6cc3267c5b97295c8daa3dc5375ac
+lib/reittiopas/geocoding.rb 41aacb43af4a7b178571646e7c4c2413dab250eb
+lib/reittiopas/http.rb e5fccc0834481a6b2a1d732e2f7fa9007a291247
+lib/reittiopas/coordinates.rb e4114495a73f43c51d040f3147f963fe28fcd1b6
+lib/reittiopas/routing.rb 5833a35b3953e8f1d88e4ef48e6df43a4c72be47
+lib/reittiopas/utils.rb 67f54e983f78e319fb239d173359fedf7d5187f6
+lib/reittiopas/reittiopas.rb 5019a3c332476f0e31f7416adfef3944c74ac649

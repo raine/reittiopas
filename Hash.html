@@ -1,0 +1,426 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: Hash
+  
+    &mdash; Reittiopas (0.1.0)
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index (H)</a> &raquo;
+    
+    
+    <span class="title">Hash</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: Hash
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">Hash</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/reittiopas/utils.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#assert_required_and_valid_keys-instance_method" title="#assert_required_and_valid_keys (instance method)">- (Object) <strong>assert_required_and_valid_keys</strong>(*keys) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Both assert<em>valid</em>keys and assert<em>required</em>keys combined.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#assert_required_keys-instance_method" title="#assert_required_keys (instance method)">- (Object) <strong>assert_required_keys</strong>(*required_keys) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Raise ArgumentError if the hash is missing required keys.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#assert_valid_keys-instance_method" title="#assert_valid_keys (instance method)">- (Object) <strong>assert_valid_keys</strong>(*valid_keys) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Raise ArgumentError if the hash has keys other than +keys+.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#assert_valid_values-instance_method" title="#assert_valid_values (instance method)">- (Object) <strong>assert_valid_values</strong>(hash) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="assert_required_and_valid_keys-instance_method">
+  
+    - (<tt>Object</tt>) <strong>assert_required_and_valid_keys</strong>(*keys) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Both assert<em>valid</em>keys and assert<em>required</em>keys combined.</p>
+
+<p>Expect certain keys and none else.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+29
+30
+31
+32</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/reittiopas/utils.rb', line 29</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_assert_required_and_valid_keys identifier id'>assert_required_and_valid_keys</span><span class='lparen token'>(</span><span class='mult op'>*</span><span class='rubyid_keys identifier id'>keys</span><span class='rparen token'>)</span>
+  <span class='rubyid_assert_valid_keys identifier id'>assert_valid_keys</span><span class='lparen token'>(</span><span class='rubyid_keys identifier id'>keys</span><span class='rparen token'>)</span>
+  <span class='rubyid_assert_required_keys identifier id'>assert_required_keys</span><span class='lparen token'>(</span><span class='rubyid_keys identifier id'>keys</span><span class='rparen token'>)</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="assert_required_keys-instance_method">
+  
+    - (<tt>Object</tt>) <strong>assert_required_keys</strong>(*required_keys) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Raise ArgumentError if the hash is missing required keys.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ArgumentError</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+21
+22
+23
+24</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/reittiopas/utils.rb', line 21</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_assert_required_keys identifier id'>assert_required_keys</span><span class='lparen token'>(</span><span class='mult op'>*</span><span class='rubyid_required_keys identifier id'>required_keys</span><span class='rparen token'>)</span>
+  <span class='rubyid_missing_keys identifier id'>missing_keys</span> <span class='assign token'>=</span> <span class='lbrack token'>[</span><span class='rubyid_required_keys identifier id'>required_keys</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='rubyid_flatten identifier id'>flatten</span> <span class='minus op'>-</span> <span class='rubyid_keys identifier id'>keys</span>
+  <span class='rubyid_raise identifier id'>raise</span><span class='lparen token'>(</span><span class='rubyid_ArgumentError constant id'>ArgumentError</span><span class='comma token'>,</span> <span class='dstring node'>&quot;Missing required key(s) in the argument hash: #{missing_keys.join(&quot;, &quot;)}&quot;</span><span class='rparen token'>)</span> <span class='rubyid_unless unless_mod kw'>unless</span> <span class='rubyid_missing_keys identifier id'>missing_keys</span><span class='dot token'>.</span><span class='rubyid_empty? fid id'>empty?</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="assert_valid_keys-instance_method">
+  
+    - (<tt>Object</tt>) <strong>assert_valid_keys</strong>(*valid_keys) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Raise ArgumentError if the hash has keys other than +keys+.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ArgumentError</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+15
+16
+17
+18</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/reittiopas/utils.rb', line 15</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_assert_valid_keys identifier id'>assert_valid_keys</span><span class='lparen token'>(</span><span class='mult op'>*</span><span class='rubyid_valid_keys identifier id'>valid_keys</span><span class='rparen token'>)</span>
+  <span class='rubyid_unknown_keys identifier id'>unknown_keys</span> <span class='assign token'>=</span> <span class='rubyid_keys identifier id'>keys</span> <span class='minus op'>-</span> <span class='lbrack token'>[</span><span class='rubyid_valid_keys identifier id'>valid_keys</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='rubyid_flatten identifier id'>flatten</span>
+  <span class='rubyid_raise identifier id'>raise</span><span class='lparen token'>(</span><span class='rubyid_ArgumentError constant id'>ArgumentError</span><span class='comma token'>,</span> <span class='dstring node'>&quot;Unknown key(s): #{unknown_keys.join(&quot;, &quot;)}&quot;</span><span class='rparen token'>)</span> <span class='rubyid_unless unless_mod kw'>unless</span> <span class='rubyid_unknown_keys identifier id'>unknown_keys</span><span class='dot token'>.</span><span class='rubyid_empty? fid id'>empty?</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="assert_valid_values-instance_method">
+  
+    - (<tt>Object</tt>) <strong>assert_valid_values</strong>(hash) 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+34
+35
+36
+37
+38
+39
+40
+41</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/reittiopas/utils.rb', line 34</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_assert_valid_values identifier id'>assert_valid_values</span><span class='lparen token'>(</span><span class='rubyid_hash identifier id'>hash</span><span class='rparen token'>)</span>
+  <span class='rubyid_self self kw'>self</span><span class='dot token'>.</span><span class='rubyid_each identifier id'>each</span> <span class='rubyid_do do kw'>do</span> <span class='bitor op'>|</span><span class='rubyid_key identifier id'>key</span><span class='comma token'>,</span> <span class='rubyid_value identifier id'>value</span><span class='bitor op'>|</span>
+    <span class='rubyid_next next kw'>next</span> <span class='rubyid_unless unless_mod kw'>unless</span> <span class='rubyid_hash identifier id'>hash</span><span class='lbrack token'>[</span><span class='rubyid_key identifier id'>key</span><span class='rbrack token'>]</span>
+    <span class='rubyid_unless unless kw'>unless</span> <span class='rubyid_value identifier id'>value</span><span class='dot token'>.</span><span class='rubyid_to_s identifier id'>to_s</span> <span class='match op'>=~</span> <span class='rubyid_hash identifier id'>hash</span><span class='lbrack token'>[</span><span class='rubyid_key identifier id'>key</span><span class='rbrack token'>]</span>
+      <span class='rubyid_raise identifier id'>raise</span><span class='lparen token'>(</span><span class='rubyid_ArgumentError constant id'>ArgumentError</span><span class='comma token'>,</span> <span class='dstring node'>&quot;Invalid value for #{key}: #{value.inspect}&quot;</span><span class='rparen token'>)</span>
+    <span class='rubyid_end end kw'>end</span>
+  <span class='rubyid_end end kw'>end</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Sun Aug 12 22:55:13 2012 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.2.1 (ruby-1.8.7).
+</div>
+
+  </body>
+</html>
