@@ -36,9 +36,8 @@ namespace :spec do
     Dir.mkdir(specdoc_path) if !File.exist?(specdoc_path)
 
     output_file = File.join(specdoc_path, 'index.html')
-    # t.libs = %w[lib spec]
     t.pattern = 'spec/**/*_spec.rb'
-    t.rspec_opts = ["--format", "\"html:#{output_file}\"", "--diff"]
+    t.rspec_opts = %W( --format html --out #{File.join(specdoc_path, 'index.html')} )
     t.fail_on_error = false
   end
 end
