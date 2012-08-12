@@ -5,3 +5,4 @@ reittiopas.gemspec
 .gh_pages
 .bundle/
 *.gem
+.yardoc

@@ -1,3 +1,9 @@
+=== 0.1.0 2012-08-12
+
+* Routing support from Matti Paksula
+* Updated the project to use Rspec 2
+* Use YARD for docs instead of Rdoc
+
 === 0.0.2 2010-04-22
 
 * Fixed incorrectly configured runtime dependencies.

@@ -19,7 +19,7 @@ require 'reittiopas/http'
 
 class Reittiopas
   # The version of Reittiopas you are using.
-  VERSION = "0.0.2"
+  VERSION = "0.1.0"
 end
 
 # Shorter way for Reittiopas instance creation.
