@@ -1,11 +1,11 @@
 begin
-  require 'spec'
+  require 'rspec'
 rescue LoadError
   require 'rubygems' unless ENV['NO_RUBYGEMS']
-  require 'spec'
+  require 'rspec'
 end
 begin
-  require 'spec/rake/spectask'
+  require 'rspec/core/rake_task'
 rescue LoadError
   puts <<-EOS
 To use rspec for testing you must install rspec gem:
@@ -14,16 +14,10 @@ EOS
   exit(0)
 end
 
-desc "Run the specs under spec/models"
-Spec::Rake::SpecTask.new do |t|
-  t.spec_opts = ['--options', "spec/spec.opts"]
-  t.spec_files = FileList['spec/**/*_spec.rb']
-end
-
 namespace :spec do
   desc "Run all examples with RCov"
-  Spec::Rake::SpecTask.new(:rcov) do |t|
-    t.spec_files = FileList['spec/**/*_spec.rb']
+  RSpec::Core::RakeTask.new(:rcov) do |t|
+    t.pattern = 'spec/**/*_spec.rb'
     t.rcov = true
     t.rcov_opts = [
       '--exclude', 'spec'
@@ -37,14 +31,14 @@ namespace :spec do
   end
 
   desc "Generate HTML Specdocs for all specs"
-  Spec::Rake::SpecTask.new(:specdoc) do |t|
+  RSpec::Core::RakeTask.new(:specdoc) do |t|
     specdoc_path = File.expand_path(File.join(File.dirname(__FILE__), '..', 'specdoc'))
     Dir.mkdir(specdoc_path) if !File.exist?(specdoc_path)
 
     output_file = File.join(specdoc_path, 'index.html')
-    t.libs = %w[lib spec]
-    t.spec_files = FileList['spec/**/*_spec.rb']
-    t.spec_opts = ["--format", "\"html:#{output_file}\"", "--diff"]
+    # t.libs = %w[lib spec]
+    t.pattern = 'spec/**/*_spec.rb'
+    t.rspec_opts = ["--format", "\"html:#{output_file}\"", "--diff"]
     t.fail_on_error = false
   end
 end

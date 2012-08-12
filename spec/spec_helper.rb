@@ -1,16 +1,16 @@
 begin
-  require 'spec'
+  require 'rspec'
 rescue LoadError
   require 'rubygems' unless ENV['NO_RUBYGEMS']
   gem 'rspec'
-  require 'spec'
+  require 'rspec'
 end
 
 $:.unshift(File.dirname(__FILE__) + '/../lib')
 require 'reittiopas'
 
 require 'webmock/rspec'
-include WebMock
+include WebMock::API
 
 BASE_URI = "http://api.reittiopas.fi/public-ytv/fi/api/"
 

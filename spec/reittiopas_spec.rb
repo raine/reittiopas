@@ -125,7 +125,7 @@ describe Reittiopas::HTTP do
       it "should create a request" do
         stub_request(:get, Regexp.new(BASE_URI))
         @http.get(@opts)
-        request(:get, @uri.to_s).should have_been_made
+        a_request(:get, @uri.to_s).should have_been_made
       end
 
       it "should return response body on successful request" do
