@@ -6,3 +6,4 @@ reittiopas.gemspec
 .bundle/
 *.gem
 .yardoc
+specdoc/
